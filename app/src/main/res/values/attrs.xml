@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义View的名字-->
+    <declare-styleable name="TextView">
+        <!--name代表属性，format代表格式
+
+            format 格式: string 文字
+            color 颜色
+            dimension 宽高 字体大小
+            integer 数字
+            reference 资源（drawable)
+        -->
+        <attr name="swwText" format="string"></attr>
+        <attr name="swwTextColor" format="color"></attr>
+        <attr name="swwTextSize" format="dimension"></attr>
+        <attr name="swwMaxLength" format="integer"></attr>
+        <attr name="swwBackground" format="reference|color"></attr>
+        <!--枚举类型-->
+        <attr name="swwInputType">
+            <enum name="Number" value="1"></enum>
+            <enum name="Text" value="2"></enum>
+            <enum name="Password" value="3"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="QQStepView">
+        <attr name="outerColor" format="color"></attr>
+        <attr name="innerColor" format="color"></attr>
+        <attr name="borderWidth" format="dimension"></attr>
+        <attr name="swwStepTextSize" format="dimension"></attr>
+        <attr name="swwStepTextColor" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="MultiColorTextView">
+        <attr name="swwOriginColor" format="color"></attr>
+        <attr name="swwChangeColor" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RatingBarView">
+        <attr name="starNormal" format="reference"></attr>
+        <attr name="starFocus" format="reference"></attr>
+        <attr name="starNumber" format="integer"></attr>
+    </declare-styleable>
+
+</resources>
